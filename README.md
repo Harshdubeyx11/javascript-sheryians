@@ -15,6 +15,10 @@
 - var: we can declare them again with same name wihout any error
 - <img width="143" height="50" alt="image" src="https://github.com/user-attachments/assets/c0c2e531-24f2-430a-b1f9-101d85cd3bae" /> (which is a problem so always use "let")
 
+###const
+- we cant reassign a value but we can update the value
+- <img width="272" height="50" alt="image" src="https://github.com/user-attachments/assets/d2567605-e902-4679-8461-1c9d75d6d14b" />
+
 
 ## Scope
 
@@ -34,3 +38,22 @@
 - <img width="154" height="90" alt="image" src="https://github.com/user-attachments/assets/988f5e2c-81dd-4df6-a565-6674d950bca3" /> (here "a" is being printed in the first line before even declaring variable "a" in the 3rd line)
 - so temporal dead zone here is from line 1 till 2
 - Temporal dead zone: happens in "let" and "const" but not in "var"
+
+
+## Hoisting
+- When we make a variable in JS -It breaks into 2 parts: variable part and initialization part
+- so the variable goes to the top of the code and then initialized value remains at the bottom - this is called hoisting
+- <img width="156" height="80" alt="image" src="https://github.com/user-attachments/assets/b0fecf36-04ef-4512-b064-e54b759c9c57" />(that's why here also it knows a exists but cant print its value as it is at the bottom)
+-  
+
+ 
+
+
+
+
+
+
+
+
+
+
