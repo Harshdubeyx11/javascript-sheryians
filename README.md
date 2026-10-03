@@ -161,12 +161,26 @@
 
 
 
+## Closures (imp for interview)
+- A function which returns another function inside it and the function which is getting returned(the inside one) - that function uses any variable of the parent function
+- <img width="231" height="142" alt="image" src="https://github.com/user-attachments/assets/5d3cb565-7350-46e8-8768-67c4fb17f51b" />
 
 
+## Lexical scoping (imp for interview)
+- <img width="211" height="207" alt="image" src="https://github.com/user-attachments/assets/0b4fc77a-5a6b-4c57-95ab-b3ce02ffd099" />
+- here a can be accessed in all 3 functions, b can be accessed in 2 fucntions and c can be accessed in 1 function
+- so lexical scoping is the physical scope of the variables inside functions
+  
+
+## IIFE (immediately invoked function expressions)
+- <img width="149" height="72" alt="image" src="https://github.com/user-attachments/assets/2b46b5f5-52b8-4f0e-92ba-e0f438dbe272" />
+- This is an IIFE -> make a function and surround it with round brackets and just call it directly in the end
+- Iske andar jo code likhdoge woh ussi time chal jayega
 
 
+## Hoisting difference between declaration and expression
 
-
+- 
 
 
 
