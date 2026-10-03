@@ -100,8 +100,19 @@
 - 12 === '12' ----> false (checks datatype also)
 
 ## Problem in JS
-- (typeof null) ---> gives 'object'
-- (typeof array) ---> gives 'object'
+- (typeof null) ---> gives 'object' ->wrong
+- (typeof array) ---> gives 'object' ->wrong
+
+## Control flow statements
+- if else
+- switch cases
+- early return patterns
+  
+## Loops
+- for loop , while loop , foreach loop , do-while , 
+- <img width="96" height="94" alt="image" src="https://github.com/user-attachments/assets/b67c0cc1-948d-49e7-99c2-20e1b6be0b2a" /> (while loop syntax)
+- <img width="174" height="120" alt="image" src="https://github.com/user-attachments/assets/a11b615c-8c8d-4f36-a694-bee4b93aa2e4" /> (do-while loop syntax)
+- one interesting thing about do while loop is that it always atleast interates for once (atleast once) - even if the conditons are not met still
 
 
 
