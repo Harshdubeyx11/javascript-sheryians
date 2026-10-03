@@ -123,7 +123,42 @@
 ### how to write functions
 - <img width="149" height="85" alt="image" src="https://github.com/user-attachments/assets/bc0f85cb-c84f-42ce-913e-787105c85c48" /> (directly creating function) -> this method is called function statement
 - <img width="272" height="123" alt="image" src="https://github.com/user-attachments/assets/c78ef661-61bd-4495-bc91-f7f1e75e01aa" /> (initializing fucntion by a variable - here the function name is "fnc") -> this method is called function expression
-- 
+- <img width="226" height="96" alt="image" src="https://github.com/user-attachments/assets/0ccf0976-ff70-4095-8b0d-e6b3d18b9e63" /> (called fat arrow function)
+
+## Parameters and Arguments in Functions
+- <img width="304" height="176" alt="image" src="https://github.com/user-attachments/assets/08552a74-6171-4b99-bbb2-5d15dc3a15c4" />
+- so you can put "`${x}`" to then call functions by any value you want
+- <img width="189" height="120" alt="image" src="https://github.com/user-attachments/assets/70d53c15-f270-4ca4-b1d8-71c8a745dffa" /> (here v1, v2 are parameters and 1,2 are arguments)
+
+### default parameters
+- <img width="239" height="100" alt="image" src="https://github.com/user-attachments/assets/d206b86e-c93d-4069-8e36-f015c18b8119" /> (if no values present then we can give default values in the parameters here we have given 0)
+
+### Rest & Spread
+- If in a function we have a lot of arguments so we will have to make that many parameters, but thats not possible with a lot of arguments say 1000 so to get rid of this problem we use REST(...) or Spread(...)
+- if we put "..." in the function parameters then its ---> Rest
+- if we put "..." in the arrays or objects then its ---> Spread 
+- <img width="270" height="124" alt="image" src="https://github.com/user-attachments/assets/25e93bec-a2ea-42ed-b1fa-48882d7d2e64" />
+- we can also do like 1,2,3 in variables and remaining in REST like:
+- <img width="341" height="118" alt="image" src="https://github.com/user-attachments/assets/91686c6b-1dfb-42dc-9968-97e30b4598a4" />
+
+
+## First class functions
+- functions which we can treat as a "value" and can save it in variables
+
+## Higher order functions
+- A function which either has another funtion in its parameters or it returns another funtions inside it
+- <img width="188" height="162" alt="image" src="https://github.com/user-attachments/assets/3013eaca-f08d-4152-b316-a63ade0de339" /> (top abcd is accepting a function in the parameter)
+- <img width="226" height="159" alt="image" src="https://github.com/user-attachments/assets/9705af80-c5d5-41ca-ac41-d05aac89a0a8" /> (Returning a function inside a function)
+
+
+## Pure vs Impure functions
+
+- Pure function: A function which does not change any value outside of it
+- <img width="253" height="118" alt="image" src="https://github.com/user-attachments/assets/5b5596c0-c71a-40c4-9450-514b4e710e2a" /> (no outside value is changing from this function)
+
+- Impure function: A function which changes any value outside of it - means a function which has side affects outside of its scope
+- <img width="161" height="77" alt="image" src="https://github.com/user-attachments/assets/401b6fdc-3033-4a14-a9ff-9bc345afec81" /> ("a" value is chaning)
+
 
 
 
