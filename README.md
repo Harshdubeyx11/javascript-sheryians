@@ -115,6 +115,17 @@
 - one interesting thing about do while loop is that it always atleast interates for once (atleast once) - even if the conditons are not met still
 
 
+## Functions
+### usecase
+- we make functions so that a particular block of code only works when it is called and does not work if its not called
+- secondly, we can reuse the functions
+
+### how to write functions
+- <img width="149" height="85" alt="image" src="https://github.com/user-attachments/assets/bc0f85cb-c84f-42ce-913e-787105c85c48" /> (directly creating function) -> this method is called function statement
+- <img width="272" height="123" alt="image" src="https://github.com/user-attachments/assets/c78ef661-61bd-4495-bc91-f7f1e75e01aa" /> (initializing fucntion by a variable - here the function name is "fnc") -> this method is called function expression
+- 
+
+
 
 
 
