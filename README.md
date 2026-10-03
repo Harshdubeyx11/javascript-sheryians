@@ -44,9 +44,67 @@
 - When we make a variable in JS -It breaks into 2 parts: variable part and initialization part
 - so the variable goes to the top of the code and then initialized value remains at the bottom - this is called hoisting
 - <img width="156" height="80" alt="image" src="https://github.com/user-attachments/assets/b0fecf36-04ef-4512-b064-e54b759c9c57" />(that's why here also it knows a exists but cant print its value as it is at the bottom)
--  
 
- 
+
+## Data-types
+- 2 types: primitives and references
+- primitives: datatypes which dont have any brackets (string , number , bool , null , undefi ed, symbol, bigINT)
+- references: have brackets - eg arrays[] , objects {} , tuples ()
+- null: means you delebrately did not have any value , as till now we dont know what that value is.
+- undefined: you made a variable and did not initialise it with a value so the value it gets is undefined
+
+## how to add +1/+2 etc to the maximum value an integer can hold
+- max value an integer can hold = Number.MAX_SAFE_INTERGER
+- so you have to put "n" at its last
+- let a = 9007199254740991n <----
+- then you can do a = a +2n etc (to add +2)
+
+## References are array[] , objects{} , tuples()
+- <img width="173" height="82" alt="image" src="https://github.com/user-attachments/assets/f9dab06f-13f6-4089-9aff-b2d6e6063166" /> (here b is a reference to a for any change in b will change 'a')
+
+
+## Dynamic Typing
+- there is no static typing in JS
+- JS has dynamic data types (meaning if a=12 it can later become a=true so integer to bool)
+
+## Type coercion (== vs ===)
+- In JS we can add two different types of data types
+- <img width="95" height="53" alt="image" src="https://github.com/user-attachments/assets/010c209b-aa92-4426-afeb-7a5c74a0a6b0" /> (here 1 was also considered as string and concatenated with "5")
+- why was 5 not considered integer and additon did not happen - because if any of the operands are string then JS thinks other is also string
+- <img width="96" height="52" alt="image" src="https://github.com/user-attachments/assets/044c9aa8-2d08-4b49-85b9-b4755bcaf5f6" /> ('+' operator does 2 things add and concatenate but '-' operator only subtracts)
+
+## Truthy and falsey values
+- In js if true/false is not mentioned then automatically as per value it takes true or false values
+- JS consideres all ( 0 , false , "" , null , undefined , NaN , document.all) as false values
+- rest all are true
+
+## What is true + false
+- true = 1 and false = 0 so 1+0=1
+
+## What is null+1
+- null = 0 so null+1 = 0+1 = 1
+
+## why NaN(not a number) is a number
+- NaN is Js is a failed number operation
+- so if you multiply ---> 2 * 'harsh" we get a value called NaN(not a number)
+- since it was a number operation but it failed so its a NaN
+
+## Difference between undefined and null
+- <img width="340" height="88" alt="image" src="https://github.com/user-attachments/assets/4b77e159-4371-45da-9995-61e0d08929d1" />
+
+## Arithematic operators
+<img width="218" height="115" alt="image" src="https://github.com/user-attachments/assets/ac066fdc-85cb-4a90-824c-d600295b979d" />
+
+## How is == different from ===
+- 12 == '12' -----> true (does not check datatype
+- 12 === '12' ----> false (checks datatype also)
+
+## Problem in JS
+- (typeof null) ---> gives 'object'
+- (typeof array) ---> gives 'object'
+
+
+
 
 
 
