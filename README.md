@@ -179,8 +179,13 @@
 
 
 ## Hoisting difference between declaration and expression
+- Hositing is when a variable is broken down into 2 parts its variable and its value and the variable goes up and value stays down so above the code knows that this variable exists but it cant give its value at that time
+- mainly meaning the variable has been initialised and can be used before its even read at the bottom
+- <img width="295" height="230" alt="image" src="https://github.com/user-attachments/assets/5f37ab18-3cba-41c5-924b-e39f91063cb3" /> (Hoisting in function declaration-----> WORKS)
+- <img width="305" height="223" alt="image" src="https://github.com/user-attachments/assets/39401903-9fd8-4593-b49e-0b5fa6dfe73c" /> (Hoisting in function expression-----> DOES NOT WORK)
+- so function declarations are Hoist whereas Function definition are not hoist
+## 
 
-- 
 
 
 
