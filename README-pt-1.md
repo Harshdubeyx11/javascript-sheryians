@@ -1,4 +1,4 @@
-# JAVASCRIPT
+# JAVASCRIPT PT-1
 
 ## Keywords 
 - special words in js which have some functionality
