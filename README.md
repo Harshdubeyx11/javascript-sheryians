@@ -135,7 +135,7 @@
 
 ### Rest & Spread
 - If in a function we have a lot of arguments so we will have to make that many parameters, but thats not possible with a lot of arguments say 1000 so to get rid of this problem we use REST(...) or Spread(...)
-- if we put "..." in the function parameters then its ---> Rest
+- if we put "..." in the function parameters then its ---> Rest (and the val parameter in the fucntion will act as an array of all the arguments/values)
 - if we put "..." in the arrays or objects then its ---> Spread 
 - <img width="270" height="124" alt="image" src="https://github.com/user-attachments/assets/25e93bec-a2ea-42ed-b1fa-48882d7d2e64" />
 - we can also do like 1,2,3 in variables and remaining in REST like:
@@ -184,7 +184,84 @@
 - <img width="295" height="230" alt="image" src="https://github.com/user-attachments/assets/5f37ab18-3cba-41c5-924b-e39f91063cb3" /> (Hoisting in function declaration-----> WORKS)
 - <img width="305" height="223" alt="image" src="https://github.com/user-attachments/assets/39401903-9fd8-4593-b49e-0b5fa6dfe73c" /> (Hoisting in function expression-----> DOES NOT WORK)
 - so function declarations are Hoist whereas Function definition are not hoist
-## 
+
+
+## QUESTION
+- <img width="184" height="131" alt="image" src="https://github.com/user-attachments/assets/2b62f8bc-26ce-4157-be6a-99f27422d722" />
+- this function will return undefined
+
+
+## What does it mean when we say functions are first class citezens?
+
+- means we can treat functions as just like values itself
+- we can pass functions in functions , we can store it in variables 
+
+## Objects
+### Difference between arrays and objects 
+- Arrays are for a lot of values
+- we make objects when we want to know everything about one entity
+
+- <img width="268" height="118" alt="image" src="https://github.com/user-attachments/assets/c9a54313-89c2-40db-a475-a7b7e2abdc23" /> (making an object)
+
+### Accessing an object 
+-  <img width="63" height="23" alt="image" src="https://github.com/user-attachments/assets/dec071e3-ac5b-4548-bcce-87e65bdad8f2" /> (if we use the method "obj." then whatever we write after the dot that exact thing will be serched in the object )
+- <img width="82" height="23" alt="image" src="https://github.com/user-attachments/assets/5d187335-ab39-4f6a-ac69-48f825db0cad" /> (this is the square bracket method)
+-  <img width="290" height="235" alt="image" src="https://github.com/user-attachments/assets/f2edd1c6-4183-4121-aaec-d4801488e692" />
+
+
+### Deep object (object inside object)
+- <img width="225" height="252" alt="image" src="https://github.com/user-attachments/assets/35e3443b-75c9-486a-867d-1a60063cc07a" />
+- so if we want to access "lng" so we do:-- user.address.location.lng;
+- <img width="356" height="29" alt="image" src="https://github.com/user-attachments/assets/04831460-81c2-4d7c-92cc-f7dd1aa516e1" /> (another way if you cant write such long line again and again to access then you can do it like this once then we can directly use lng or lat whatever)
+
+
+### For loop in object
+- <img width="279" height="208" alt="image" src="https://github.com/user-attachments/assets/302578e6-5866-49c1-927b-cc4d0715d41a" /> (to access all keys of object)
+-  <img width="69" height="75" alt="image" src="https://github.com/user-attachments/assets/f2ad2c67-ebcf-48dc-9f41-19dd9ea35852" /> (output all keys printed)
+-  <img width="285" height="204" alt="image" src="https://github.com/user-attachments/assets/9dd27f98-0ebd-4679-96a3-8cea85f6fe9c" /> (to access the values of all keys of object)
+- <img width="120" height="75" alt="image" src="https://github.com/user-attachments/assets/d3f80b88-e499-4195-9cb8-4f584e452ae0" /> (outputs all values of keys in object)
+
+### Object.keys() function ---> gives all the keys in array 
+- <img width="280" height="169" alt="image" src="https://github.com/user-attachments/assets/10d222c1-462e-46d6-886e-cdbd144a2c84" />
+- <img width="276" height="53" alt="image" src="https://github.com/user-attachments/assets/ed6a7061-bc5f-44bc-a20e-e3809ab7aac5" />
+
+### Object.entries() function ---> gives all the (key,value) in array form
+- <img width="192" height="24" alt="image" src="https://github.com/user-attachments/assets/d436f297-840e-4385-b979-049920a0f75e" />
+<img width="217" height="55" alt="image" src="https://github.com/user-attachments/assets/79da81df-3b40-45b3-8c31-5df26d6d2a7f" />
+
+
+### Spread operator in object
+- can be used to copy an object into another object
+- <img width="297" height="158" alt="image" src="https://github.com/user-attachments/assets/b1fd4bd7-364b-4ce1-85bb-b2dfd38c3efe" />
+- <img width="374" height="44" alt="image" src="https://github.com/user-attachments/assets/0ff19a66-cd95-4b1a-b64d-3c949d1b949a" />
+
+### If we make a nested object and then we declare another object2 and use spread operator or any operator to ocopy obj1 to obj2 and then change anything in the obj2 in the nested then in obj1 also it will be changed 
+
+- <img width="323" height="249" alt="image" src="https://github.com/user-attachments/assets/2ee961ab-9c76-4c4b-942d-e0938feb94e1" />
+- this is called deep-clone
+
+### Another way to copy obj1 to obj2
+- <img width="463" height="235" alt="image" src="https://github.com/user-attachments/assets/5e725607-d6cd-4358-bd70-829b438034ba" /> (first we convert to string by stringify then we parse it to its original form)
+- if we now change anything in the nested place in obj2 then that wont create a deep copy and wont affect obj1
+- So whenever you see a nested object and you want to copy it to another object use stringify and parse method and not spread operator method
+
+
+### optional chaining 
+- <img width="290" height="185" alt="image" src="https://github.com/user-attachments/assets/8588deb7-337b-4716-8bad-54da9dae22ca" />
+- suppose we have this object and then later in the code very later, you change the address to salary
+- so before you were calling like: obj.address.salary but it wont work because address changed to salary so you will get error
+- so you can put like obj.address?.salary? question mark so we dont get error we get undefined
+
+
+## One problem
+- <img width="528" height="125" alt="image" src="https://github.com/user-attachments/assets/60f59ed5-6e32-4af3-8275-3be90ce30ecf" /> (correct method)
+- <img width="531" height="109" alt="image" src="https://github.com/user-attachments/assets/1b85eee1-6684-45d4-b20c-820acc14bd71" /> (first-name dash is not allowed)
+
+
+
+
+
+
 
 
 
